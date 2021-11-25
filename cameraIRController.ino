@@ -10,7 +10,8 @@ const int IR_SEND_PIN = GPIO_NUM_9;
 const int LED_SEND_PIN = M5_LED;
  
 void setup() {
-  M5.begin(true, false, false);
+  M5.begin();
+
   pinMode(IR_SEND_PIN, OUTPUT);
   pinMode(LED_SEND_PIN, OUTPUT);
   digitalWrite(GPIO_NUM_10, LED_OFF);
